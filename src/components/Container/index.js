@@ -7,4 +7,9 @@ export const Container = styled.div`
     grid-template-areas:
         'header main'
         'header footer';
+
+    @media (max-width: 770px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;

@@ -5,7 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif
+        font-family: 'Jost', sans-serif;
     }
 
     ul {
@@ -22,6 +22,19 @@ export default createGlobalStyle`
 
     body {
         -webkit-font-smoothing: antialiased !important;
-        background-color: #f3f3f3;
+        background-image: url('https://i.ibb.co/kxcQhTh/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: 770px) {
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-position: center;
+        }
     }
 `;

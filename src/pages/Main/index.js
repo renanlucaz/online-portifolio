@@ -6,6 +6,8 @@ import Header from '../../components/Header';
 import { Container } from '../../components/Container';
 import { Footer, MainArea } from './styles';
 
+import profile from '../../assets/perfil.jpg';
+
 function Main() {
     return (
         <Container>
@@ -14,7 +16,7 @@ function Main() {
             <MainArea>
                 <div className="content">
                     <h1>
-                        Renan Lucas <br /> <span>FullStack Developer</span>
+                        Renan Nascimento <br /> <span>FullStack Developer</span>
                     </h1>
                     <p>
                         Programador na stack NodeJS, ReactJS e React Native.
@@ -22,14 +24,14 @@ function Main() {
                         Sempre pronto para adquirir novos conhecimentos e
                         experiências.
                     </p>
+
                     <Link to="/services">Contratar serviços</Link>
-                    <Link to="/portifolio">Portifólio</Link>
+                    <Link to="/portifolio" className="outline">
+                        Portifólio
+                    </Link>
                 </div>
-                <div className="photo">
-                    <img
-                        src="https://avatars1.githubusercontent.com/u/52937668?v=4l"
-                        alt="Renan Lucas"
-                    />
+                <div className="profile">
+                    <img src={profile} alt="Renan Nascimento" />
                 </div>
             </MainArea>
 
@@ -40,28 +42,28 @@ function Main() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaLinkedin />
+                        <FaLinkedin size={25} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
+                        href="https://www.github.com/renanlucaz"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaGithub />
+                        <FaGithub size={25} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
+                        href="https://www.instagram.com/renanlucaz"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaInstagram />
+                        <FaInstagram size={25} />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
+                        href="https://api.whatsapp.com/send?phone=5511996990476&text=Ol%C3%A1!"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaWhatsapp />
+                        <FaWhatsapp size={25} />
                     </a>
                 </div>
 
