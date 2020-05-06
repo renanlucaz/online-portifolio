@@ -14,22 +14,37 @@ export const Header = styled.header`
     justify-content: center;
 
     nav {
+        width: 180px;
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
 
         a {
-            text-align: center;
+            text-align: right;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
             margin-top: 50px;
-            font-size: 25px;
-            color: #e0e0e0;
+            font-size: 18px;
+            color: rgb(228, 131, 140);
+            width: 20px;
+            line-height: 50px;
+            border-bottom: 2px solid white;
+            transition: all ease 0.2s;
         }
 
         a:hover {
+            a.current {
+                width: 20px;
+            }
+
+            width: 50px;
+            color: white;
         }
 
         a.current {
-            font-weight: bold;
-            color: #ededed;
+            color: white;
+            width: 50px;
         }
     }
 
@@ -38,15 +53,21 @@ export const Header = styled.header`
         nav {
             flex-direction: row;
             justify-content: space-evenly;
+            padding: 14px;
         }
 
         nav a {
+            border: none;
             margin: 0px;
-            font-size: 14px;
-            padding: 20px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            font-size: 10px;
+            width: auto;
+            color: #e0e0e0;
         }
 
         nav a + a {
+            margin-left: 12px;
         }
     }
 `;
