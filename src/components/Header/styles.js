@@ -9,7 +9,6 @@ export const Header = styled.header`
     );
     grid-area: header;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-right: 15px;
     display: flex;
     justify-content: center;
 
@@ -18,6 +17,7 @@ export const Header = styled.header`
         display: flex;
         flex-direction: column;
         padding-left: 10px;
+        position: fixed;
 
         a {
             text-align: right;
@@ -34,10 +34,6 @@ export const Header = styled.header`
         }
 
         a:hover {
-            a.current {
-                width: 20px;
-            }
-
             width: 50px;
             color: white;
         }
@@ -47,11 +43,11 @@ export const Header = styled.header`
             width: 50px;
         }
     }
-
-    @media (max-width: 770px) {
+    @media (max-width: 1235px) {
         margin: 0px;
         nav {
             flex-direction: row;
+            position: initial;
             justify-content: space-evenly;
             padding: 14px;
         }
@@ -61,9 +57,19 @@ export const Header = styled.header`
             margin: 0px;
             letter-spacing: 1px;
             line-height: 20px;
-            font-size: 10px;
+            font-size: 15px;
             width: auto;
             color: #e0e0e0;
+        }
+
+        nav a + a {
+            margin-left: 25px;
+        }
+    }
+
+    @media (max-width: 770px) {
+        nav a {
+            font-size: 10px;
         }
 
         nav a + a {

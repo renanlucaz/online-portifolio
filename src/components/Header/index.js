@@ -7,11 +7,12 @@ function Curriculum() {
     return (
         <Header>
             <nav>
-                <Link to="/" className="current">
-                    Início
-                </Link>
+                <Link to="/">Início</Link>
+
                 <Link to="/services">Serviços</Link>
+
                 <Link to="/portifolio">Portifólio</Link>
+
                 <Link to="/curriculo">Currículo</Link>
             </nav>
         </Header>

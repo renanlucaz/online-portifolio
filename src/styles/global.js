@@ -24,7 +24,9 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased !important;
         background-image: url('https://i.ibb.co/kxcQhTh/background.jpg');
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
+        background-position: top;
     }
 
     @media (max-width: 770px) {

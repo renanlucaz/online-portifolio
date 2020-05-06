@@ -1,11 +1,26 @@
 import styled from 'styled-components';
 
 export const MainArea = styled.main`
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    grid-area: main;
-    margin-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        font-size: 45px;
+        color: #ce323a;
+        margin-bottom: 20px;
+    }
+
+    section.main {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        grid-area: main;
+    }
 
     h1 {
         color: white;
@@ -32,7 +47,7 @@ export const MainArea = styled.main`
         color: #a9a9a9;
     }
 
-    a {
+    .main a {
         font-weight: bold;
         padding: 12px;
         border-radius: 25px;
@@ -41,7 +56,7 @@ export const MainArea = styled.main`
         transition: 0.2s;
     }
 
-    a:hover {
+    .main a:hover {
         background-color: #ce323a;
     }
 
@@ -62,10 +77,14 @@ export const MainArea = styled.main`
     }
 
     @media (max-width: 770px) {
-        flex-direction: column-reverse;
-        text-align: center;
+        section.main {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
 
-        margin-left: 0px;
+        section.main .content {
+            margin-right: 0px;
+        }
 
         div.content {
             padding: 1px;
