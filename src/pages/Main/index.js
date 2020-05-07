@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaChevronDown } from 'react-icons/fa';
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Header from '../../components/Header';
 import { Container } from '../../components/Container';
 import Footer from '../../components/Footer';
@@ -18,7 +18,7 @@ function Main() {
             <MainArea>
                 <section className="main">
                     <div className="content">
-                        <h1>
+                        <h1 id="main">
                             Renan Nascimento <br />{' '}
                             <span>FullStack Developer</span>
                         </h1>
@@ -38,9 +38,9 @@ function Main() {
                         <img src={profile} alt="Renan Nascimento" />
                     </div>
                 </section>
-                <a href="#services">
+                <Link to="services" smooth duration={800}>
                     <FaChevronDown />
-                </a>
+                </Link>
             </MainArea>
             <Services />
             <Footer />

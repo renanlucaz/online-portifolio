@@ -10,6 +10,7 @@ export const MainArea = styled.main`
     svg {
         font-size: 45px;
         color: #ce323a;
+        cursor: pointer;
         margin-bottom: 20px;
     }
 
@@ -49,6 +50,7 @@ export const MainArea = styled.main`
 
     .main a {
         font-weight: bold;
+        cursor: pointer;
         padding: 12px;
         border-radius: 25px;
         color: #ededed;

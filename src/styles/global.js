@@ -29,6 +29,29 @@ export default createGlobalStyle`
         background-position: top;
     }
 
+    ::-webkit-scrollbar {
+        width: 10px;
+
+    }
+
+    /* Fundo da barra de rolagem */
+    ::-webkit-scrollbar-track-piece {
+        background-color: #0C100C;
+    }
+
+    /* Cor do indicador de rolagem */
+    ::-webkit-scrollbar-thumb:vertical,
+    ::-webkit-scrollbar-thumb:horizontal {
+        background-color: #CE323A;
+        border-radius: 10px;
+    }
+
+    /* Cor do indicador de rolagem - ao passar o mouse */
+    ::-webkit-scrollbar-thumb:vertical:hover,
+    ::-webkit-scrollbar-thumb:horizontal:hover {
+        background-color: #C20C1D
+    }
+
     @media (max-width: 770px) {
         * {
             margin: 0px;

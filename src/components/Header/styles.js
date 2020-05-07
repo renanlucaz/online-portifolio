@@ -24,6 +24,7 @@ export const Header = styled.header`
             text-transform: uppercase;
             letter-spacing: 4px;
             font-weight: bold;
+            cursor: pointer;
             margin-top: 50px;
             font-size: 18px;
             color: rgb(228, 131, 140);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import { Header } from './styles';
 
@@ -7,9 +7,13 @@ function Curriculum() {
     return (
         <Header>
             <nav>
-                <Link to="/">Início</Link>
+                <Link to="main" smooth duration={800}>
+                    Início
+                </Link>
 
-                <Link to="/services">Serviços</Link>
+                <Link to="services" smooth duration={800}>
+                    Serviços
+                </Link>
 
                 <Link to="/portifolio">Portifólio</Link>
 

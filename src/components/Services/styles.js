@@ -48,10 +48,15 @@ export const ServicesSection = styled.section`
 
     div.card-group .card a {
         width: 1000px;
-        background-color: #c20c1d;
+        background-color: #ce323a;
         color: white;
         padding: 10px 100px 10px;
         border-radius: 3px;
+        transition: all 0.2s;
+    }
+
+    div.card-group .card a:hover {
+        background-color: #c20c1d;
     }
 
     div.card-group .card img {
