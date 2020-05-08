@@ -11,7 +11,7 @@ export const MainArea = styled.main`
         font-size: 45px;
         color: #ce323a;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
 
     section.main {
@@ -20,6 +20,7 @@ export const MainArea = styled.main`
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 20px;
+        margin-top: 30px;
         grid-area: main;
     }
 
@@ -95,7 +96,7 @@ export const MainArea = styled.main`
 
         div.profile img {
             margin-top: 10px;
-            width: 150px;
+            width: 110px;
         }
 
         h1 {

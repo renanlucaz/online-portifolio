@@ -7,6 +7,7 @@ export const Container = styled.div`
     grid-template-areas:
         'header main'
         'header services'
+        'header portifolio'
         'header footer';
 
     @media (max-width: 1235px) {

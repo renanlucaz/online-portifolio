@@ -5,7 +5,7 @@ export const PageFooter = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 25px;
     background-color: #080808;
     opacity: 0.8;
     grid-area: footer;

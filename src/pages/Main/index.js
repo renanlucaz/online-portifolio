@@ -6,6 +6,7 @@ import { Link } from 'react-scroll';
 import Header from '../../components/Header';
 import { Container } from '../../components/Container';
 import Footer from '../../components/Footer';
+import Portifolio from '../../components/Portifolio';
 import Services from '../../components/Services';
 import { MainArea } from './styles';
 
@@ -18,7 +19,7 @@ function Main() {
             <MainArea>
                 <section className="main">
                     <div className="content">
-                        <h1 id="main">
+                        <h1>
                             Renan Nascimento <br />{' '}
                             <span>FullStack Developer</span>
                         </h1>
@@ -29,13 +30,15 @@ function Main() {
                             experiências.
                         </p>
 
-                        <Link to="/services">Contratar serviços</Link>
+                        <Link to="services" smooth duration={800}>
+                            Contratar serviços
+                        </Link>
                         <Link to="/portifolio" className="outline">
                             Portifólio
                         </Link>
                     </div>
                     <div className="profile">
-                        <img src={profile} alt="Renan Nascimento" />
+                        <img src={profile} id="main" alt="Renan Nascimento" />
                     </div>
                 </section>
                 <Link to="services" smooth duration={800}>
@@ -43,6 +46,7 @@ function Main() {
                 </Link>
             </MainArea>
             <Services />
+            <Portifolio />
             <Footer />
         </Container>
     );

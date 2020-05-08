@@ -22,11 +22,12 @@ export default createGlobalStyle`
 
     body {
         -webkit-font-smoothing: antialiased !important;
+        background-color: black;
         background-image: url('https://i.ibb.co/kxcQhTh/background.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
 
     ::-webkit-scrollbar {
@@ -56,10 +57,6 @@ export default createGlobalStyle`
         * {
             margin: 0px;
             padding: 0px;
-        }
-
-        body {
-            background-position: center;
         }
     }
 `;

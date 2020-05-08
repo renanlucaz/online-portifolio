@@ -10,6 +10,7 @@ export const Header = styled.header`
     grid-area: header;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     display: flex;
+    z-index: 5;
     justify-content: center;
 
     nav {
@@ -48,7 +49,13 @@ export const Header = styled.header`
         margin: 0px;
         nav {
             flex-direction: row;
-            position: initial;
+            background: #555;
+            width: 100%;
+            background: linear-gradient(
+                180deg,
+                rgb(220, 15, 34) 0%,
+                rgb(134, 9, 21) 80%
+            );
             justify-content: space-evenly;
             padding: 14px;
         }
@@ -71,6 +78,10 @@ export const Header = styled.header`
     @media (max-width: 770px) {
         nav a {
             font-size: 10px;
+        }
+
+        nav a:hover {
+            width: auto;
         }
 
         nav a + a {

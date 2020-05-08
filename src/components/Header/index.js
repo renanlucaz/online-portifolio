@@ -7,7 +7,7 @@ function Curriculum() {
     return (
         <Header>
             <nav>
-                <Link to="main" smooth duration={800}>
+                <Link to="main" smooth duration={800} offset={-100}>
                     Início
                 </Link>
 
@@ -15,9 +15,9 @@ function Curriculum() {
                     Serviços
                 </Link>
 
-                <Link to="/portifolio">Portifólio</Link>
+                <Link to="portifolio">Portifólio</Link>
 
-                <Link to="/curriculo">Currículo</Link>
+                <Link to="curriculo">Currículo</Link>
             </nav>
         </Header>
     );
