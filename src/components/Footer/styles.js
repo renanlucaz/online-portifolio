@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const PageFooter = styled.footer`
     display: flex;
@@ -12,7 +13,7 @@ export const PageFooter = styled.footer`
 
     svg {
         box-sizing: content-box;
-        color: #ce323a;
+        color: ${colors.primary};
         padding: 20px;
         margin: 20px 20px;
         background-color: #101010;

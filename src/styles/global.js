@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from './colors';
 
 export default createGlobalStyle`
     * {
@@ -43,14 +44,14 @@ export default createGlobalStyle`
     /* Cor do indicador de rolagem */
     ::-webkit-scrollbar-thumb:vertical,
     ::-webkit-scrollbar-thumb:horizontal {
-        background-color: #CE323A;
+        background-color: ${colors.primary};
         border-radius: 10px;
     }
 
     /* Cor do indicador de rolagem - ao passar o mouse */
     ::-webkit-scrollbar-thumb:vertical:hover,
     ::-webkit-scrollbar-thumb:horizontal:hover {
-        background-color: #C20C1D
+        background-color: ${colors.seccondary};
     }
 
     @media (max-width: 770px) {

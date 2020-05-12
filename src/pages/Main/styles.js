@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const MainArea = styled.main`
     height: 100vh;
@@ -9,9 +10,9 @@ export const MainArea = styled.main`
 
     svg {
         font-size: 45px;
-        color: #ce323a;
+        color: ${colors.seccondary};
         cursor: pointer;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
     }
 
     section.main {
@@ -20,8 +21,7 @@ export const MainArea = styled.main`
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 20px;
-        margin-top: 30px;
-        grid-area: main;
+        margin-top: 10px;
     }
 
     h1 {
@@ -55,23 +55,23 @@ export const MainArea = styled.main`
         padding: 12px;
         border-radius: 25px;
         color: #ededed;
-        background-color: #c20c1d;
+        background-color: ${colors.primary};
         transition: 0.2s;
     }
 
     .main a:hover {
-        background-color: #ce323a;
+        background-color: ${colors.seccondary};
     }
 
     a.outline {
         background-color: rgba(0, 0, 0, 0);
-        border: 2px solid #c20c1d;
-        color: #c20c1d;
+        border: 2px solid ${colors.primary};
+        color: ${colors.primary};
         font-weight: bold;
     }
 
     a.outline:hover {
-        background-color: #c20c1d;
+        background-color: ${colors.primary};
         color: white;
     }
 
@@ -83,6 +83,7 @@ export const MainArea = styled.main`
         section.main {
             flex-direction: column-reverse;
             text-align: center;
+            margin-top: 60px;
         }
 
         section.main .content {
@@ -95,7 +96,7 @@ export const MainArea = styled.main`
         }
 
         div.profile img {
-            margin-top: 10px;
+            margin-top: 0px;
             width: 110px;
         }
 

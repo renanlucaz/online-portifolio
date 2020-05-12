@@ -1,81 +1,83 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const Header = styled.header`
-    background: rgb(194, 12, 29);
-    background: linear-gradient(
-        180deg,
-        rgb(220, 15, 34) 0%,
-        rgb(134, 9, 21) 80%
-    );
-    grid-area: header;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     display: flex;
-    z-index: 5;
-    justify-content: center;
+    padding: 20px;
+    justify-content: space-around;
 
-    nav {
-        width: 180px;
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px;
-        position: fixed;
+    @media (max-width: 770px) {
+        justify-content: center;
+    }
 
-        a {
-            text-align: right;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 50px;
-            font-size: 18px;
-            color: rgb(228, 131, 140);
-            width: 20px;
-            line-height: 50px;
-            border-bottom: 2px solid white;
-            transition: all ease 0.2s;
-        }
+    svg {
+        box-sizing: content-box;
+        color: ${colors.primary};
+        font-size: 36px;
+        margin: 0px 20px;
+        border-radius: 100%;
+        transition: 0.2s;
 
-        a:hover {
-            width: 50px;
-            color: white;
-        }
-
-        a.current {
-            color: white;
-            width: 50px;
+        @media (max-width: 770px) {
+            display: none;
+            margin: 0px;
         }
     }
+
+    svg:hover {
+        color: #47adde;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: white;
+            position: relative;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+
+        a::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 2px;
+            background: #fff;
+            transition: width 0.3s;
+        }
+        a:hover {
+            color: #98d8f7;
+        }
+        a:hover:after {
+            width: 40px;
+        }
+
+        a + a {
+            margin-left: 30px;
+        }
+
+        @media (max-width: 1235px) {
+            a:hover {
+                color: #fff;
+            }
+        }
+    }
+
     @media (max-width: 1235px) {
-        margin: 0px;
-        nav {
-            flex-direction: row;
-            background: #555;
-            width: 100%;
-            background: linear-gradient(
-                180deg,
-                rgb(220, 15, 34) 0%,
-                rgb(134, 9, 21) 80%
-            );
-            justify-content: space-evenly;
-            padding: 14px;
-        }
-
-        nav a {
-            border: none;
-            margin: 0px;
-            letter-spacing: 1px;
-            line-height: 20px;
-            font-size: 15px;
-            width: auto;
-            color: #e0e0e0;
-        }
-
-        nav a + a {
-            margin-left: 25px;
+        h1 {
+            display: none;
         }
     }
 
     @media (max-width: 770px) {
+        position: fixed;
+        width: 100%;
+        background-color: ${colors.primary};
         nav a {
             font-size: 10px;
         }

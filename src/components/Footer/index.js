@@ -7,7 +7,7 @@ import { PageFooter } from './styles';
 function Footer() {
     return (
         <PageFooter>
-            <div className="icons">
+            <div className="icons" id="contact">
                 <a
                     href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
                     target="_blank"

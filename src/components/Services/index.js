@@ -1,17 +1,13 @@
 import React from 'react';
 
-import { ServicesSection } from './styles';
-import CardGroup from '../CardGroup';
-import PageTitle from '../PageTitle';
+import { ServicesSection, PageTitle } from './styles';
+import Stacks from '../Stacks';
 
 function Services() {
     return (
         <ServicesSection>
-            <PageTitle
-                title="Serviços"
-                description="Confira serviços de qualidade e com o preço acessível"
-            />
-            <CardGroup />
+            <PageTitle id="stack">Trabalhando com:</PageTitle>
+            <Stacks />
         </ServicesSection>
     );
 }
