@@ -7,9 +7,8 @@ export const ServicesSection = styled.section`
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
-    background-color: ${colors.transparent};
+    background-color: ${colors.light};
     padding: 40px;
-    box-shadow: 5px 0px 10px ${colors.transparent};
 
     @media (max-width: 770px) {
         padding: 10px;
@@ -19,10 +18,9 @@ export const ServicesSection = styled.section`
 
 export const PageTitle = styled.h1`
     text-align: center;
-    margin-bottom: 50px;
-    color: ${colors.light};
+    padding-bottom: 3px;
+    color: ${colors.dark};
     font-size: 40px;
-    text-shadow: 1px 1px 1px black;
 
     @media (max-width: 770px) {
         font-size: 30px;

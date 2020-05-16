@@ -1,59 +1,58 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
-import { Header } from './styles';
+import { Header, IconGroup, Icon, NavBar, NavLink } from './styles';
 
 function Curriculum() {
     return (
         <Header>
-            <div className="icons">
-                <a
+            <IconGroup>
+                <Icon
                     href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <FaLinkedin />
-                </a>
-                <a
+                </Icon>
+                <Icon
                     href="https://www.github.com/renanlucaz"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <FaGithub />
-                </a>
-                <a
+                </Icon>
+                <Icon
                     href="https://www.instagram.com/renanlucaz"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <FaInstagram />
-                </a>
-                <a
+                </Icon>
+                <Icon
                     href="https://api.whatsapp.com/send?phone=5511996990476&text=Ol%C3%A1!"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     <FaWhatsapp />
-                </a>
-            </div>
-            <nav>
-                <Link to="main" smooth duration={800} offset={-100}>
+                </Icon>
+            </IconGroup>
+            <NavBar>
+                <NavLink to="main" smooth duration={800} offset={-200}>
                     Início
-                </Link>
+                </NavLink>
 
-                <Link to="stack" smooth duration={800} offset={-100}>
+                <NavLink to="stack" smooth duration={800} offset={-100}>
                     Stack
-                </Link>
+                </NavLink>
 
-                <Link to="services" smooth duration={800} offset={-60}>
+                <NavLink to="services" smooth duration={800} offset={-60}>
                     Portifólio
-                </Link>
+                </NavLink>
 
-                <Link to="contact" smooth duration={1200}>
+                <NavLink to="contact" smooth duration={1200}>
                     Contato
-                </Link>
-            </nav>
+                </NavLink>
+            </NavBar>
         </Header>
     );
 }

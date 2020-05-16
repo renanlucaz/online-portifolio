@@ -1,17 +1,15 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 export const Container = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-evenly;
-    align-items: center;
 
     svg {
-        color: #ececec;
+        color: ${colors.mediumDark};
         font-size: 120px;
-        margin: 0px;
-
-        margin-bottom: 15px;
+        margin-top: 30px;
     }
 
     @media (max-width: 770px) {
@@ -27,7 +25,7 @@ export const Content = styled.div`
 
     hr {
         width: 100px;
-        border: 0.7px solid #b7b7b7;
+        border: 0.7px solid ${colors.lightDark};
         margin-top: 20px;
     }
 
@@ -44,13 +42,12 @@ export const Content = styled.div`
 export const Title = styled.h2`
     text-align: center;
     font-size: 25px;
-    color: #ececec;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: ${colors.dark};
     font-weight: bold;
 `;
 
 export const Description = styled.p`
     font-size: 18px;
     text-align: center;
-    color: #cecece;
+    color: ${colors.lightDark};
 `;

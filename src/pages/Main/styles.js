@@ -12,7 +12,7 @@ export const MainArea = styled.main`
         font-size: 45px;
         color: ${colors.seccondary};
         cursor: pointer;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 
     section.main {
@@ -21,7 +21,7 @@ export const MainArea = styled.main`
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 20px;
-        margin-top: 10px;
+        margin-top: 40px;
     }
 
     h1 {

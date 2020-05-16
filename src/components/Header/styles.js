@@ -1,93 +1,87 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 
 export const Header = styled.header`
     display: flex;
-    padding: 20px;
+    width: 100%;
     justify-content: space-around;
+    position: fixed;
+    padding: 20px;
+    transition: all 0.5s;
 
     @media (max-width: 770px) {
         justify-content: center;
+        background-color: ${colors.primary};
     }
+`;
 
-    svg {
-        box-sizing: content-box;
-        color: ${colors.primary};
-        font-size: 36px;
-        margin: 0px 20px;
-        border-radius: 100%;
-        transition: 0.2s;
+export const IconGroup = styled.div``;
 
-        @media (max-width: 770px) {
-            display: none;
-            margin: 0px;
-        }
-    }
+export const Icon = styled.a`
+    color: ${colors.primary};
+    font-size: 36px;
+    margin: 0px 20px;
+    border-radius: 100%;
+    transition: 0.2s;
 
-    svg:hover {
+    :hover {
         color: #47adde;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
+    @media (max-width: 770px) {
+        display: none;
+        margin: 0px;
+    }
+`;
 
-        a {
-            color: white;
-            position: relative;
-            font-size: 20px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s;
-        }
+export const NavBar = styled.nav`
+    display: flex;
+    align-items: center;
+`;
 
-        a::after {
-            content: '';
-            display: block;
-            width: 10px;
-            height: 2px;
-            background: #fff;
-            transition: width 0.3s;
-        }
-        a:hover {
-            color: #98d8f7;
-        }
-        a:hover:after {
-            width: 40px;
-        }
+export const NavLink = styled(Link)`
+    color: white;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
 
-        a + a {
-            margin-left: 30px;
-        }
+    + a {
+        margin-left: 30px;
+    }
 
-        @media (max-width: 1235px) {
-            a:hover {
-                color: #fff;
-            }
-        }
+    :hover {
+        color: ${colors.seccondary};
+    }
+
+    ::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        transition: width 0.3s;
+    }
+
+    :hover:after {
+        width: 40px;
     }
 
     @media (max-width: 1235px) {
-        h1 {
-            display: none;
-        }
-    }
+        font-size: 10px;
 
-    @media (max-width: 770px) {
-        position: fixed;
-        width: 100%;
-        background-color: ${colors.primary};
-        nav a {
-            font-size: 10px;
+        + a {
+            margin-left: 15px;
         }
 
-        nav a:hover {
-            width: auto;
+        :hover {
+            color: #fff;
         }
-
-        nav a + a {
-            margin-left: 12px;
+        :hover:after {
+            width: 20px;
         }
     }
 `;
