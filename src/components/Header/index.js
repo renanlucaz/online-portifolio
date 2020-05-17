@@ -38,19 +38,19 @@ function Curriculum() {
             </IconGroup>
             <NavBar>
                 <NavLink to="main" smooth duration={800} offset={-220}>
-                    Início
+                    Home
                 </NavLink>
 
                 <NavLink to="about" smooth duration={800} offset={-100}>
-                    Stack
+                    About
                 </NavLink>
 
                 <NavLink to="services" smooth duration={800} offset={-60}>
-                    Portifólio
+                    Services
                 </NavLink>
 
-                <NavLink to="contact" smooth duration={1200}>
-                    Contato
+                <NavLink to="portifolio" smooth duration={1200}>
+                    Portifolio
                 </NavLink>
             </NavBar>
         </Header>

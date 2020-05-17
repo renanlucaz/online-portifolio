@@ -29,7 +29,7 @@ export const Content = styled.div`
 
     hr {
         width: 100px;
-        border: 0.7px solid ${colors.lightDark};
+        border: 1px solid ${colors.primary};
         margin-top: 20px;
     }
 
@@ -39,7 +39,7 @@ export const Content = styled.div`
         margin: auto;
 
         + div {
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
     }
 

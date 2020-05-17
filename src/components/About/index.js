@@ -25,7 +25,7 @@ function About() {
         <ServicesSection>
             <AboutContainer>
                 <Presentation>
-                    <Title>
+                    <Title id="about">
                         About <span>me</span>
                     </Title>
                     <Line size="80px" />
@@ -55,7 +55,7 @@ function About() {
                 </Presentation>
                 <AboutImage src={profile} />
             </AboutContainer>
-            <StacksTitle id="about">Working with:</StacksTitle>
+            <StacksTitle id="services">Working with:</StacksTitle>
             <Stacks />
         </ServicesSection>
     );

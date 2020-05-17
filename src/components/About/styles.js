@@ -10,12 +10,20 @@ export const AboutContainer = styled.div`
     margin: auto;
     width: 100%;
     max-width: ${metrics.pageWidth};
+
+    @media (max-width: 770px) {
+        flex-direction: column-reverse;
+    }
 `;
 
 export const Presentation = styled.div`
     display: flex;
     width: 50%;
     flex-direction: column;
+
+    @media (max-width: 770px) {
+        width: 100%;
+    }
 `;
 
 export const Title = styled.h1`
@@ -24,10 +32,19 @@ export const Title = styled.h1`
     span {
         color: ${colors.primary};
     }
+
+    @media (max-width: 770px) {
+        margin-top: 10px;
+    }
 `;
 
 export const AboutImage = styled.img`
     height: 350px;
+
+    @media (max-width: 770px) {
+        height: auto;
+        width: 100%;
+    }
 `;
 
 export const Line = styled.hr`
@@ -40,6 +57,10 @@ export const TopText = styled.span`
     font-size: 30px;
     margin-top: 40px;
     color: ${colors.lightDark};
+
+    @media (max-width: 770px) {
+        margin-top: 20px;
+    }
 `;
 
 export const Love = styled(FaHeart).attrs({
@@ -55,18 +76,25 @@ export const CodeTitle = styled.strong`
 `;
 
 export const AboutDescription = styled.p`
-    font-size: 20px;
+    font-size: 17px;
 `;
 
 export const InfoContainer = styled.div`
     display: flex;
-    margin-top: 15px;
+    margin-top: 25px;
+
+    @media (max-width: 770px) {
+        flex-direction: column;
+    }
 `;
 
 export const Email = styled.span``;
 
 export const Locale = styled.p`
     margin-left: 30px;
+    @media (max-width: 770px) {
+        margin: 14px 0;
+    }
 `;
 
 export const ServicesSection = styled.section`
@@ -86,16 +114,17 @@ export const ServicesSection = styled.section`
 `;
 
 export const StacksTitle = styled.h2`
-    background-color: ${colors.primary};
     margin: 0 -40px;
-    padding: 30px;
+    padding: 50px;
+    background-color: #ddd;
     margin-top: 100px;
     margin-bottom: 40px;
     text-align: center;
-    color: ${colors.light};
+    color: ${colors.mediumDark};
     font-size: 40px;
 
     @media (max-width: 770px) {
+        margin: 40px -10px;
         font-size: 30px;
         margin-bottom: 20px;
     }

@@ -7,6 +7,7 @@ export const Header = styled.header`
     width: 100%;
     justify-content: space-around;
     position: fixed;
+    z-index: 3;
     padding: 20px;
     transition: all 0.5s;
 
@@ -54,7 +55,7 @@ export const NavLink = styled(Link)`
     }
 
     :hover {
-        color: ${colors.seccondary};
+        color: #81d6ff;
     }
 
     ::after {

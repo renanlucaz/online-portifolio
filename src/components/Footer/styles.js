@@ -23,7 +23,7 @@ export const PageFooter = styled.footer`
 
     svg:hover {
         transform: translateY(-2px);
-        color: #dd6163;
+        color: ${colors.seccondary};
     }
 
     p {
