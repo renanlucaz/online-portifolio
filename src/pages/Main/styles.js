@@ -1,20 +1,6 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
 
 export const MainArea = styled.main`
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    svg {
-        font-size: 45px;
-        color: ${colors.seccondary};
-        cursor: pointer;
-        margin-bottom: 20px;
-    }
-
     section.main {
         display: flex;
         width: 100%;
@@ -23,56 +9,10 @@ export const MainArea = styled.main`
         padding-top: 20px;
         margin-top: 40px;
     }
-
-    h1 {
-        color: white;
-        padding-top: 100px;
-        font-size: 35px;
-    }
-
-    span {
-        font-weight: 400;
-        font-size: 30px;
-        color: #ededed;
-    }
-
     div.profile img {
         border-radius: 50%;
         width: 300px;
         margin-top: 80px;
-    }
-
-    p {
-        margin-top: 20px;
-        margin-bottom: 40px;
-        font-size: 17px;
-        color: #a9a9a9;
-    }
-
-    .main a {
-        font-weight: bold;
-        cursor: pointer;
-        padding: 12px;
-        border-radius: 25px;
-        color: #ededed;
-        background-color: ${colors.primary};
-        transition: 0.2s;
-    }
-
-    .main a:hover {
-        background-color: ${colors.seccondary};
-    }
-
-    a.outline {
-        background-color: rgba(0, 0, 0, 0);
-        border: 2px solid ${colors.primary};
-        color: ${colors.primary};
-        font-weight: bold;
-    }
-
-    a.outline:hover {
-        background-color: ${colors.primary};
-        color: white;
     }
 
     a + a {

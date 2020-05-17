@@ -6,7 +6,7 @@ import Stacks from '../Stacks';
 function Services() {
     return (
         <ServicesSection>
-            <PageTitle>Working with:</PageTitle>
+            <PageTitle id="about">Working with:</PageTitle>
             <Stacks />
         </ServicesSection>
     );
