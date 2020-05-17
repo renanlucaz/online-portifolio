@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
+import metrics from '../../styles/metrics';
 
 export const Container = styled.div`
     display: flex;
     flex: 1;
-    justify-content: space-evenly;
+    width: 100%;
+    max-width: ${metrics.pageWidth};
+    margin: auto;
+    justify-content: space-between;
 
     svg {
         color: ${colors.mediumDark};
@@ -19,7 +23,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    max-width: 25%;
+    max-width: 30%;
     align-items: center;
     flex-direction: column;
 
@@ -30,12 +34,17 @@ export const Content = styled.div`
     }
 
     @media (max-width: 770px) {
-        max-width: 100%;
+        max-width: 50%;
         margin-bottom: 40px;
+        margin: auto;
 
         + div {
             margin-bottom: 60px;
         }
+    }
+
+    @media (max-width: 650px) {
+        max-width: 100%;
     }
 `;
 
