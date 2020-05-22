@@ -13,7 +13,14 @@ export const Header = styled.header`
 
     @media (max-width: 770px) {
         justify-content: center;
+    }
+
+    &.active {
         background-color: ${colors.primary};
+
+        svg {
+            color: ${colors.light};
+        }
     }
 `;
 
@@ -24,7 +31,7 @@ export const Icon = styled.a`
     font-size: 36px;
     margin: 0px 20px;
     border-radius: 100%;
-    transition: 0.2s;
+    transition: 0.5s;
 
     :hover {
         color: #47adde;

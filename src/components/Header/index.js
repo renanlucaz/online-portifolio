@@ -4,8 +4,19 @@ import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Header, IconGroup, Icon, NavBar, NavLink } from './styles';
 
 function Curriculum() {
+    window.onscroll = () => {
+        const header = document.querySelector('.header');
+        const top = window.scrollY;
+
+        if (top >= 50) {
+            header.classList.add('active');
+        } else {
+            header.classList.remove('active');
+        }
+    };
+
     return (
-        <Header>
+        <Header className="header">
             <IconGroup>
                 <Icon
                     href="https://www.linkedin.com/in/renan-nascimento-16a5811a0/"
