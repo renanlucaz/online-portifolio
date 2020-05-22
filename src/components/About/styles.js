@@ -88,10 +88,33 @@ export const InfoContainer = styled.div`
     }
 `;
 
-export const Email = styled.span``;
+export const Email = styled.span`
+    position: relative;
+    padding-bottom: 6px;
+
+    &:before {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background: ${colors.primary};
+        position: absolute;
+        bottom: 0;
+    }
+`;
 
 export const Locale = styled.p`
     margin-left: 30px;
+    position: relative;
+    padding-bottom: 6px;
+
+    &:before {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background: ${colors.primary};
+        position: absolute;
+        bottom: 0;
+    }
     @media (max-width: 770px) {
         margin: 14px 0;
     }

@@ -16,7 +16,7 @@ import {
     DownLink,
 } from './styles';
 
-import perfil from '../../assets/perfil.jpg';
+import perfil from '../../assets/perfil.png';
 
 export default function Main() {
     return (

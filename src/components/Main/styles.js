@@ -31,13 +31,14 @@ export const Content = styled.div`
         flex-direction: column-reverse;
         justify-content: flex-end;
         margin-top: 85px;
-        align-items: center;
     }
 `;
 
 export const TextArea = styled.div`
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 
     flex-direction: column;
     width: 400px;
@@ -50,18 +51,23 @@ export const TextArea = styled.div`
 `;
 
 export const ImageContent = styled.div`
+    position: absolute;
+    z-index: 1;
+    right: 0;
     display: flex;
     align-items: center;
+
+    @media (max-width: 770px) {
+        top: 0;
+        margin: 0 auto;
+    }
 `;
 
 export const Image = styled.img`
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    height: 100vh;
 
     @media (max-width: 770px) {
-        width: 140px;
-        height: 140px;
+        height: 100vh;
     }
 `;
 
@@ -140,4 +146,7 @@ export const Down = styled(FaChevronDown)`
     margin-bottom: 20px;
 `;
 
-export const DownLink = styled(Link)``;
+export const DownLink = styled(Link)`
+    position: relative;
+    z-index: 2;
+`;

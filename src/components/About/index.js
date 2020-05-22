@@ -45,11 +45,9 @@ function About() {
                     <InfoContainer>
                         <Email>
                             <strong>Email:</strong> renanlucaz53@gmail.com
-                            <Line size="60px" />
                         </Email>
                         <Locale>
                             <strong>City:</strong> Rio Grande da Serra - SP
-                            <Line size="60px" />
                         </Locale>
                     </InfoContainer>
                 </Presentation>
