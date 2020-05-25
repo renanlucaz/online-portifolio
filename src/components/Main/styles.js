@@ -52,14 +52,14 @@ export const TextArea = styled.div`
 
 export const ImageContent = styled.div`
     position: absolute;
+    bottom: 0;
     z-index: 1;
-    right: 0;
+    right: 150px;
     display: flex;
     align-items: center;
 
-    @media (max-width: 770px) {
-        top: 0;
-        margin: 0 auto;
+    @media (max-width: 1200px) {
+        right: 0px;
     }
 `;
 
@@ -67,6 +67,7 @@ export const Image = styled.img`
     height: 100vh;
 
     @media (max-width: 770px) {
+        display: none;
         height: 100vh;
     }
 `;

@@ -7,7 +7,9 @@ export const PageFooter = styled.footer`
     justify-content: center;
     align-items: center;
     padding: 25px;
+    border-top: 15px solid ${colors.primary};
     background-color: #080808;
+    margin-top: 20px;
     opacity: 0.8;
     grid-area: footer;
 

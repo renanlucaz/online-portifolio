@@ -8,18 +8,25 @@ export const Header = styled.header`
     justify-content: space-around;
     position: fixed;
     z-index: 3;
-    padding: 20px;
-    transition: all 0.5s;
+    padding: 10px;
+    transition: all 0.4s;
 
     @media (max-width: 770px) {
         justify-content: center;
+        padding-top: 15px;
     }
 
     &.active {
         background-color: ${colors.primary};
+        padding: 20px;
 
         svg {
             color: ${colors.light};
+            transition: all 0.3s;
+        }
+
+        svg:hover {
+            transform: translateY(-2px);
         }
     }
 `;
@@ -59,10 +66,6 @@ export const NavLink = styled(Link)`
 
     + a {
         margin-left: 30px;
-    }
-
-    :hover {
-        color: #81d6ff;
     }
 
     ::after {

@@ -13,6 +13,7 @@ export const AboutContainer = styled.div`
 
     @media (max-width: 770px) {
         flex-direction: column-reverse;
+        justify-content: center;
     }
 `;
 
@@ -28,6 +29,7 @@ export const Presentation = styled.div`
 
 export const Title = styled.h1`
     font-size: 46px;
+    position: relative;
 
     span {
         color: ${colors.primary};
@@ -35,6 +37,8 @@ export const Title = styled.h1`
 
     @media (max-width: 770px) {
         margin-top: 10px;
+        text-align: center;
+        font-size: 35px;
     }
 `;
 
@@ -51,6 +55,10 @@ export const Line = styled.hr`
     width: ${(props) => props.size};
     border: 1px solid ${colors.primary};
     margin-top: 7px;
+
+    @media (max-width: 770px) {
+        margin: auto;
+    }
 `;
 
 export const TopText = styled.span`
@@ -60,6 +68,7 @@ export const TopText = styled.span`
 
     @media (max-width: 770px) {
         margin-top: 20px;
+        text-align: center;
     }
 `;
 
@@ -73,10 +82,19 @@ export const CodeTitle = styled.strong`
     font-size: 65px;
     margin-left: 4px;
     color: ${colors.dark};
+
+    @media (max-width: 770px) {
+        text-align: center;
+    }
 `;
 
 export const AboutDescription = styled.p`
     font-size: 17px;
+
+    @media (max-width: 770px) {
+        font-size: 15px;
+        text-align: center;
+    }
 `;
 
 export const InfoContainer = styled.div`
@@ -85,6 +103,8 @@ export const InfoContainer = styled.div`
 
     @media (max-width: 770px) {
         flex-direction: column;
+        margin: auto;
+        margin-top: 25px;
     }
 `;
 
@@ -117,6 +137,7 @@ export const Locale = styled.p`
     }
     @media (max-width: 770px) {
         margin: 14px 0;
+        margin-left: 0px;
     }
 `;
 

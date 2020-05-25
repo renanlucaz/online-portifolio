@@ -56,11 +56,11 @@ function Curriculum() {
                     About
                 </NavLink>
 
-                <NavLink to="services" smooth duration={800} offset={-60}>
+                <NavLink to="services" smooth duration={800} offset={-80}>
                     Services
                 </NavLink>
 
-                <NavLink to="portifolio" smooth duration={1200}>
+                <NavLink to="portifolio" smooth duration={1200} offset={-100}>
                     Portifolio
                 </NavLink>
             </NavBar>
