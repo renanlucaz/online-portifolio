@@ -4,8 +4,9 @@ import colors from '../../styles/colors';
 import metrics from '../../styles/metrics';
 
 export const AboutContainer = styled.div`
+    position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     margin: auto;
     width: 100%;
@@ -43,7 +44,7 @@ export const Title = styled.h1`
 `;
 
 export const AboutImage = styled.img`
-    height: 350px;
+    height: 450px;
 
     @media (max-width: 770px) {
         height: auto;

@@ -1,5 +1,5 @@
 const metrics = {
-    pageWidth: '1000px',
+    pageWidth: '1100px',
 };
 
 export default metrics;

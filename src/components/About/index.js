@@ -18,7 +18,7 @@ import {
 } from './styles';
 import Stacks from '../Stacks';
 
-import profile from '../../assets/perfil.jpg';
+import profile from '../../assets/perfil.png';
 
 function About() {
     return (
