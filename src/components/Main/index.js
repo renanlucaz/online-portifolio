@@ -31,15 +31,25 @@ export default function Main() {
                         experiências.
                     </Description>
                     <ButtonContainer>
-                        <Button>Contratar serviços</Button>
-                        <OutlineButton>Portifólio</OutlineButton>
+                        <Button
+                            href="https://shorturl.at/fpOV1"
+                            target="_blank"
+                        >
+                            Contratar serviços
+                        </Button>
+                        <OutlineButton
+                            href="https://shorturl.at/mpN68"
+                            target="_blank"
+                        >
+                            Currículo
+                        </OutlineButton>
                     </ButtonContainer>
                 </TextArea>
                 <ImageContent>
-                    <Image src={perfil} />
+                    <Image src={perfil} alt="Renan Nascimento" />
                 </ImageContent>
             </Content>
-            <DownLink to="about" smooth duration={800} offset={-40}>
+            <DownLink to="about" smooth duration={800} offset={-120}>
                 <Down />
             </DownLink>
         </MainArea>

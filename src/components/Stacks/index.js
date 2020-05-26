@@ -20,8 +20,8 @@ function Stacks() {
                 <MdLayers />
                 <Title>Backend</Title>
                 <Description>
-                    Tecnologias avançadas de desenvolvimento como ReactJS para
-                    construção de sistemas Web com qualidade e performace.
+                    Desenvolvimento de APIs com NodeJS, que garante uma
+                    aplicação com velocidade e escalabilidade.
                 </Description>
                 <hr />
             </Content>
@@ -30,8 +30,8 @@ function Stacks() {
                 <MdSmartphone />
                 <Title>Mobile</Title>
                 <Description>
-                    Tecnologias avançadas de desenvolvimento como ReactJS para
-                    construção de sistemas Web com qualidade e performace.
+                    Criação e manutenção de aplicativos nativos para Android e
+                    IOS com React Native.
                 </Description>
                 <hr />
             </Content>

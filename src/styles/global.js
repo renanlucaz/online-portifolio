@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import colors from './colors';
+import background from '../assets/background.jpg';
 
 export default createGlobalStyle`
     * {
@@ -24,11 +25,9 @@ export default createGlobalStyle`
     body {
         -webkit-font-smoothing: antialiased !important;
         background-color: black;
-        background-image: url('https://i.ibb.co/kxcQhTh/background.jpg');
-        background-repeat: no-repeat;
+        background: url(${background}) no-repeat center ;
         background-attachment: fixed;
         background-size: cover;
-        background-position: center;
     }
 
     ::-webkit-scrollbar {

@@ -46,18 +46,18 @@ export const Galerry = styled.div`
 export const GalerryItem = styled.div`
     flex: 0 0 calc(33.33% - 10px);
     max-width: calc(33.33% - 10px);
-
     margin: auto;
     margin-bottom: 16px;
     position: relative;
 
-    :hover {
+    &:hover {
+        cursor: pointer;
+
         img {
             opacity: 0.3;
-            cursor: pointer;
+            background-color: black;
         }
-
-        span {
+        h3 {
             opacity: 1;
         }
     }
@@ -73,13 +73,15 @@ export const GalerryItem = styled.div`
         max-width: 100%;
     }
 
-    span {
-        font-size: 28px;
+    h3 {
+        font-size: 18px;
         font-weight: bold;
         color: white;
         position: absolute;
-        top: 45%;
-        left: 2%;
+        margin: auto;
+        top: 10%;
+        margin: 0 5px;
+        text-align: center;
         opacity: 0;
         transition: all 0.4s;
     }
@@ -87,6 +89,7 @@ export const GalerryItem = styled.div`
 
 export const Image = styled.img`
     width: 100%;
+    background-color: black;
     border-radius: 5px;
     transition: all 0.4s;
 `;

@@ -9,6 +9,13 @@ import {
     Image,
 } from './styles';
 
+import BeTheHero from '../../assets/portifolio/be-the-hero.jpg';
+import DevRadar from '../../assets/portifolio/dev-radar.jpg';
+import Masks from '../../assets/portifolio/masks-mobile.jpg';
+import Rocketshoes from '../../assets/portifolio/rocketshoes.jpg';
+import Ajr from '../../assets/portifolio/ajr.jpg';
+import Aircnc from '../../assets/portifolio/air-cnc.jpg';
+
 export default function Portifolio() {
     return (
         <Container>
@@ -17,22 +24,43 @@ export default function Portifolio() {
 
             <Galerry>
                 <GalerryItem>
-                    <Image src="https://cdn.dribbble.com/users/1072032/screenshots/5404948/23.jpg" />
+                    <Image src={BeTheHero} alt="Be the hero" />
+                    <h3>
+                        Encontre ONGs que precisam de ajuda, e seja o herói do
+                        dia!
+                    </h3>
                 </GalerryItem>
                 <GalerryItem>
-                    <Image src="https://www.uidownload.com/files/983/489/297/uiexpert-website-home-page-free-download-discover-the-world%E2%80%99s-top-designers-creatives-preview.jpg" />
+                    <Image src={DevRadar} alt="Dev radar" />
+                    <h3>
+                        Encontre devs perto de você que programam nas mesmas
+                        tecnologias que as suas!
+                    </h3>
                 </GalerryItem>
                 <GalerryItem>
-                    <Image src="https://i.pinimg.com/originals/b5/21/64/b5216428627366104122e166463552cf.jpg" />
+                    <Image src={Masks} alt="Masks mobile" />
+                    <h3>
+                        Quer comprar máscaras artesanais mas não sabe onde
+                        encontrar? Veja os melhores vendedores perto de você!
+                    </h3>
                 </GalerryItem>
                 <GalerryItem>
-                    <Image src="https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/amazon-seller-landing-page-for-sketch-thumb.jpg" />
+                    <Image src={Rocketshoes} alt="Rocketshoes" />
+                    <h3>
+                        Sistema de compra de calçados. Feito no Bootcamp GoStack
+                        da Rocketseat.
+                    </h3>
                 </GalerryItem>
                 <GalerryItem>
-                    <Image src="https://cdn.dribbble.com/users/644755/screenshots/6237973/frame___2x.png" />
+                    <Image src={Ajr} alt="EC Ajr Voleibol" />
+                    <h3>Site da EC Ajr Voliebol.</h3>
                 </GalerryItem>
                 <GalerryItem>
-                    <Image src="https://cdn.psdrepo.com/images/2x/freebie-web-hosting-landing-page-ui-k3.jpg" />
+                    <Image src={Aircnc} alt="Aircnc" />
+                    <h3>
+                        Cadastre os Spots da sua empresa para serem agendandos
+                        por devs em tempo real!
+                    </h3>
                 </GalerryItem>
             </Galerry>
         </Container>

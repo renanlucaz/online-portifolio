@@ -51,7 +51,7 @@ function About() {
                         </Locale>
                     </InfoContainer>
                 </Presentation>
-                <AboutImage src={profile} />
+                <AboutImage src={profile} alt="Renan Nascimento" />
             </AboutContainer>
             <StacksTitle id="services">Working with:</StacksTitle>
             <Stacks />
