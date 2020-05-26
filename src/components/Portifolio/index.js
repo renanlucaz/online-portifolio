@@ -20,7 +20,7 @@ export default function Portifolio() {
     return (
         <Container>
             <Title id="portifolio">Portifólio</Title>
-            <Description>Conheça alguns dos meus trabalhos</Description>
+            <Description>Conheça alguns dos meus trabalhos:</Description>
 
             <Galerry>
                 <GalerryItem>
